@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Consumo y Cobertura · Almacenes</title>
 <style>
-:root{ --fx:#0086d6; --fx-dk:#0a4f8f; --navy:#0b2545; --bg:#eef1f4; --bar-h:96px; }
+:root{ --fx:#0086d6; --fx-dk:#0a4f8f; --navy:#0b2545; --bg:#eef1f4; --bar-h:54px; }
 *{box-sizing:border-box}
 html,body{margin:0;height:100%;background:var(--bg);font:14px/1.4 "Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif}
 .bar{position:relative;height:var(--bar-h);display:flex;align-items:center;justify-content:flex-end;gap:16px;padding:0 26px;z-index:2;
@@ -13,15 +13,15 @@ html,body{margin:0;height:100%;background:var(--bg);font:14px/1.4 "Segoe UI",sys
      box-shadow:0 3px 12px rgba(11,37,69,.25)}
 .bar::after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;background:linear-gradient(90deg,var(--navy),var(--fx) 55%,#3fb6f2)}
 .bar .t{font-size:14px;letter-spacing:1.6px;text-transform:uppercase;color:#fff;font-weight:700;white-space:nowrap;text-shadow:0 1px 3px rgba(0,0,0,.4)}
-.sw{display:flex;gap:8px;padding:4px;border-radius:999px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.35);backdrop-filter:blur(4px)}
-.sw button{border:0;background:transparent;color:#fff;font:inherit;font-size:16px;font-weight:600;padding:11px 24px;border-radius:999px;cursor:pointer;white-space:nowrap;transition:background .15s,color .15s,box-shadow .15s}
+.sw{display:flex;gap:6px;padding:3px;border-radius:999px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.35);backdrop-filter:blur(4px)}
+.sw button{border:0;background:transparent;color:#fff;font:inherit;font-size:15.5px;font-weight:600;padding:6px 20px;border-radius:999px;cursor:pointer;white-space:nowrap;transition:background .15s,color .15s,box-shadow .15s}
 .sw button:hover{background:rgba(255,255,255,.18)}
 .sw button[aria-pressed="true"]{background:#fff;color:var(--fx-dk);box-shadow:0 3px 12px rgba(0,0,0,.25)}
 .sw button:focus-visible{outline:2px solid #fff;outline-offset:2px}
 .stage{position:relative;height:calc(100% - var(--bar-h))}
 .stage iframe{position:absolute;inset:0;width:100%;height:100%;border:0;background:var(--bg);visibility:hidden}
 .stage iframe.on{visibility:visible}
-@media (max-width:640px){ :root{--bar-h:72px} .bar{padding:0 10px;gap:8px;background-size:auto 100%,auto;background-position:left center,0 0} .bar .t{display:none} .sw{flex:1} .sw button{flex:1;padding:9px 6px;font-size:13.5px} }
+@media (max-width:640px){ :root{--bar-h:54px} .bar{padding:0 10px;gap:8px;background-size:auto 100%,auto;background-position:left center,0 0} .bar .t{display:none} .sw{flex:1} .sw button{flex:1;padding:8px 6px;font-size:13.5px} }
 </style>
 </head>
 <body>
